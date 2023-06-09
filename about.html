@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="custom.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html" data-text="Ijeoma.">Ijeoma.</a></div>
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
+
+            <div class="dropdown-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: About Me -->
+    <div class="about-container">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <img src="img/ijay.jpeg" alt="" class="image">
+            <h3>Hi, I am Anyanwu Nwanneadi Ijeoma.</h3>
+            <p>I'm a driven front-end developer that has a good sense of aesthetics and a passion for producing user interfaces that are simple to use. I'm skilled at using contemporary technology to create user-friendly, responsive web applications.
+                Despite being a self-taught novice in the field, I have an established background in HTML, CSS, JavaScript, and the CSS frameworks Reactjs,Bootstrap and Materialize CSS.
+                I have good communication skills in addition to my technical expertise. I also work well with others and as a team.
+                Take a look at my portfolio to see some of the projects I've worked on. Please do not hesitate to contact me if you have any questions or would like to talk about a possible collaboration. Please get in touch with me!</p>
+        </div>
+        
+    </div>
+
+    <div class="home-container">
+        <a href="#"><i class='bx bxl-facebook' ></i></a>
+        <a href="#"><i class='bx bxl-instagram' ></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = toggleBtn.querySelector('i');
+        const dropDownMenu = document.querySelector('.dropdown-menu');
+
+        toggleBtn.addEventListener('click', function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.className = isOpen ? 'bx bx-x' : 'bx bx-menu-alt-left';
+        });
+    </script>
+</body>
+</html>

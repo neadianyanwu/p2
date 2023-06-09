@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="custom.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html" data-text="Ijeoma.">Ijeoma.</a></div>
+
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
+
+            <div class="dropdown-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section: Contact -->
+    <section class="contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <p>Get In Touch</p>
+        </div>
+        <div class="container">
+            <div class="contact-info">
+                <div class="box">
+                    <div class="icon"><i class='bx bx-map'></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Excess Sounds Mobil Road <br>Lekki Ajah,<br>Lagos, Nigeria</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class='bx bxs-phone'></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>0807-199-5803</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class='bx bx-envelope'></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>anya.ijeomanwaneadi@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <h2>Leave a Message</h2>
+                    <div class="input-box">
+                        <input type="text" name="" required="required">
+                        <span>Name</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="input-box">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="home-container">
+        <a href="#"><i class='bx bxl-facebook' ></i></a>
+        <a href="#"><i class='bx bxl-instagram' ></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+    </div> -->
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = toggleBtn.querySelector('i');
+        const dropDownMenu = document.querySelector('.dropdown-menu');
+
+        toggleBtn.addEventListener('click', function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.className = isOpen ? 'bx bx-x' : 'bx bx-menu-alt-left';
+        });
+    </script>
+</body>
+</html>
